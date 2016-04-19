@@ -18,14 +18,14 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 public class MainClass {
     public static void main(String[] args) {
-//        JUnitCore engine = new JUnitCore();
-//        engine.addListener(new TextListener(System.out)); // required to print reports
-//
-//        Result result = engine.run(Test1.class);
-//        
-//        for (Failure failure : result.getFailures()) {
-//            System.out.println(failure.toString());
-//        }
-//        System.out.println(result.wasSuccessful());
+        JUnitCore engine = new JUnitCore();
+        engine.addListener(new TextListener(System.out)); // required to print reports
+
+        Result result = engine.run(Test1.class);
+        
+        for (Failure failure : result.getFailures()) {
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
     }
 }
