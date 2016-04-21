@@ -1,3 +1,7 @@
+package main;
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,16 +24,8 @@ import org.junit.runners.Suite.SuiteClasses;
  *
  * @author Linda
  */
-
 public class Test1{
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
     
     @Before
     public void setUp() {
@@ -38,14 +34,14 @@ public class Test1{
     @After
     public void tearDown() {
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
     @Test
     public void Test1011(){
         assertEquals(1, 1);
+    }
+    
+    @Test
+    public void Test56(){
+        assertEquals(1,0);
     }
 }
